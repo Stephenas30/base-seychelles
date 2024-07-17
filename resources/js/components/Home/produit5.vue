@@ -103,5 +103,6 @@ const filteredData = ref(data.value);
 .span-price{
     font-size: 25px;
     color: #bd162d;
+    font-weight: 600;
 }
 </style>

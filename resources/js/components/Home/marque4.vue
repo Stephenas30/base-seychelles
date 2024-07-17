@@ -102,6 +102,7 @@
 .card-mar img {
     max-width: 85px;
     opacity: 0.08;
+    cursor: pointer;
 }
 .card-mar img:hover {
     opacity: 1;
