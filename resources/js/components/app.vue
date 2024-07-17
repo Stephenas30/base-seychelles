@@ -39,7 +39,7 @@
                         <a class="nav-link" href="#">TERMS AND LEGAL NOTICE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">CONTACT US</a>
+                        <a class="nav-link" href="#">CONTACT US</a>
                     </li>
                 </ul>
             </div>
@@ -78,6 +78,12 @@ body {
 }
 .cont-padd {
     padding: 15px 0;
+}
+.nav-item a{
+    font-weight: 600;
+}
+.nav-item a:hover{
+    color: #bd162d;
 }
 @media (max-width: 1063px) {
     .navbar-nav {

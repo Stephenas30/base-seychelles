@@ -25,7 +25,7 @@
                         v-for="(item, index) in filteredData"
                         :key="index"
                     >
-                    <img src="../../../../public/image/car.jpg" alt="">
+                    <img src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2022/02/tesla-1.jpg" alt="">
                     <div class="div-item">
                         <h1 class="title-item">{{ item.title }}</h1>
                         <span>18,360 mi • Manual • Petrol • Black</span>
