@@ -23,7 +23,7 @@
         </div>
     </div>
 </template>
-<style scoop>
+<style scoped>
 .tit-form {
     text-align: center;
     color: #333;
@@ -46,5 +46,12 @@
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 100;
+}
+button{
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    background-color: #bd162d;
+    color: #fff;
 }
 </style>

@@ -36,7 +36,7 @@
         </div>
     </div>
 </template>
-<style scoop>
+<style scoped>
 .div-mt{
     margin-top: 60px;
 }
