@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1>Latest Inventory</h1>
+                    <h1>{{ text }}</h1>
                     <img
                         class="img-anime"
                         src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
@@ -11,9 +11,7 @@
                     />
                 </div>
                 <div class="col-lg-6">
-                    <p class="param-prod">
-                        Incididunt labore dolore magna aliqua enim veniam quis nostrud tempor tempor adispecing miny exercitation ullamco laboris nisiut.
-                    </p>
+                    <p class="param-prod">{{ param }}</p>
                 </div>
             </div>
         </div>
@@ -44,6 +42,10 @@
 <script setup>
 import { ref } from 'vue';
 
+const text = ref("Latest Inventory");
+const param = ref(`Incididunt labore dolore magna aliqua enim veniam quis
+                        nostrud tempor tempor adispecing miny exercitation
+                        ullamco laboris nisiut.`);
 const data = ref([
     {
         title: "Tesla Model 3"

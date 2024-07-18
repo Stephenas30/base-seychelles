@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;">
         <div class="container-fluid cont-padd">
             <a class="navbar-brand" href="#">EVA CAR RENTAL</a>
             <button
@@ -18,28 +18,31 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#"
                             ><router-link class="nav-link" to="/"
-                                >HOME</router-link
+                                >CAR RENTAL SEYCHELLES</router-link
                             ></a
                         >
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"
                             ><router-link class="nav-link" to="/about"
-                                >CAR RENTAL SEYCHELLES</router-link
+                                >CARS AND PRICES</router-link
                             ></a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CARS AND PRICES</a>
+                        <a class="nav-link" href="#"><router-link class="nav-link" to="/"
+                                >FAQ</router-link
+                            ></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#"><router-link class="nav-link" to="/"
+                                >TERMS AND LEGAL NOTICE</router-link
+                            ></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TERMS AND LEGAL NOTICE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="#"><router-link class="nav-link" to="/"
+                                >CONTACT US</router-link
+                            ></a>
                     </li>
                 </ul>
             </div>
@@ -50,16 +53,6 @@
     </main>
 </template>
 <style scoped>
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-}
-
 .collapse {
     width: 100% !important;
     justify-content: center !important;
@@ -76,14 +69,12 @@ body {
     display: flex !important;
     justify-content: flex-end !important;
 }
-.cont-padd {
-    padding: 15px 0;
-}
 .nav-item a{
-    font-weight: 600;
+    font-weight: 400;
 }
 .nav-item a:hover{
     color: #bd162d;
+    font-weight: 500;
 }
 @media (max-width: 1063px) {
     .navbar-nav {
@@ -98,8 +89,5 @@ body {
     .cont-padd {
         padding: 15px;
     }
-    li.nav-item {
-    padding: 6px 0;
-}
 }
 </style>
