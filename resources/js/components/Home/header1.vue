@@ -33,7 +33,7 @@
 }
 .title-head{
     background-color: rgba(11, 11, 11, 0.529);
-    min-height: 300px;
+    min-height: 320px;
     padding: 20px 30px;
     display: flex;
     margin: 30px 0;
@@ -55,6 +55,7 @@ button{
     background-color: #bd162d;
     color: #fff;
     /* margin-top: 30px; */
+    margin-bottom: 10px;
 }
 @media (max-width: 765px) {
     .title-head h1 {

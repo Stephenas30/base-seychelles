@@ -38,28 +38,32 @@
     </div>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const items = ref([
     {
         title: "30+ Years in Business",
-        description: "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
-        icon: "bi bi-wrench"
+        description:
+            "Incididunt labore dolore magn aliqua enim veniam lorem doler lodem exercitation miniys quise ullamco.",
+        icon: "bi bi-wrench",
     },
     {
         title: "Locate Your Dream Car",
-        description: "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
-        icon: "bi bi-geo-alt"
+        description:
+            "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
+        icon: "bi bi-geo-alt",
     },
     {
         title: "All Vehicles Are Quality Assured",
-        description: "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
-        icon: "bi bi-check-lg"
+        description:
+            "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
+        icon: "bi bi-check-lg",
     },
     {
         title: "Low Prices & Big Savings",
-        description: "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
-        icon: "bi bi-wrench-adjustable-circle"
+        description:
+            "Incididunt labore dolore magn aliqua enim veniam nostrud exercitation miniys quise ullamco.",
+        icon: "bi bi-wrench-adjustable-circle",
     },
 ]);
 </script>
@@ -121,11 +125,11 @@ const items = ref([
     .cont-tit {
         width: 90%;
     }
-    .card{
+    .card {
         padding: 0 50px;
     }
     .param-hm {
-    text-align: justify;
-}
+        text-align: justify;
+    }
 }
 </style>

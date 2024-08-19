@@ -33,7 +33,7 @@
                 <div class="col-lg-6 mar-tp-loc">
                     <div class="division-loc-img">
                         <img
-                            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2022/02/dealers-location-map-2.png"
+                            src="../../../../public/image/photos.png"
                             alt=""
                             srcset=""
                         />
@@ -46,22 +46,30 @@
 <script setup>
 import { ref } from "vue";
 const items = [
-  { text: "Alabama" },
-  { text: "Arizona" },
-  { text: "California" },
-  { text: "New Jersey" },
-  { text: "New York" },
-  { text: "North Carolina" },
-  { text: "Texas" },
-  { text: "Washington" },
+    { text: "Victoria" },
+    { text: "Beau Vallon" },
+    { text: "Anse Boileau" },
+    { text: "Takamaka" },
+    { text: "Cascade" },
+    { text: "Anse Royale" },
+    { text: "Grand'Anse" },
+    { text: "Baie Sainte Anne" },
+    { text: "La Passe" },
+    { text: "Anse Volbert" },
+    { text: "Port Glaud" },
+    { text: "Bel Ombre" },
+    { text: "Mont Fleuri" },
+    { text: "Glacis" },
+    { text: "Au Cap" },
+    { text: "Anse Aux Pins" },
+    { text: "Bel Air" },
 ];
 
 const text = ref("Latest Inventory");
 const param = ref(`Incididunt labore dolore magna aliqua enim veniam quis
                         nostrud tempor tempor adispecing miny exercitation
                         ullamco laboris nisiut.`);
-const head = ref(`450+ Dealer Locations Across The USA
-Locate Your Nearest Dealer`);
+const head = ref(`450+ Dealer Locations Across Seychelles. Locate Your Nearest Dealer.`);
 </script>
 <style scoped>
 .div-col {
@@ -78,10 +86,16 @@ Locate Your Nearest Dealer`);
     font-size: 25px;
     font-weight: bolder;
 }
-.division-loc-img img {
-    width: 100%;
+.division-loc-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
-.div-loc{
+.division-loc-img img {
+    width: 50%;
+}
+.div-loc {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -89,16 +103,17 @@ Locate Your Nearest Dealer`);
 .head2 {
     font-size: 26px;
 }
-.divis-h{
+.divis-h {
     margin-top: 20px;
 }
-.mar-tp-loc{
+.mar-tp-loc {
     margin-top: 80px;
 }
 .div-sp {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    min-width: 160px;
 }
 .span-h {
     width: 20px;
