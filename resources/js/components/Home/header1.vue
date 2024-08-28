@@ -22,8 +22,8 @@
     </div>
 </template>
 <style scoped>
-.div-header{
-    background-image: url('../../../../public/image/car.jpg')!important;
+.div-header {
+    background-image: url("../../../../public/image/car.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,7 +31,7 @@
     width: 100%;
     min-height: 500px;
 }
-.title-head{
+.title-head {
     background-color: rgba(11, 11, 11, 0.529);
     min-height: 320px;
     padding: 20px 30px;
@@ -41,14 +41,14 @@
     flex-wrap: wrap;
     color: #fff;
 }
-.title-head h1{
+.title-head h1 {
     text-transform: capitalize;
     font-size: 64px;
 }
-.title-head p{
+.title-head p {
     font-size: 32px;
 }
-button{
+button {
     padding: 10px 40px;
     border: none;
     font-weight: bold;

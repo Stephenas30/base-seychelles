@@ -1,12 +1,15 @@
 <template>
     <div>
         <div class="container">
-            <h1>Page Not Found</h1>
+            <h1 class="pt-5 pb-2">Page Not Found</h1>
             <img
-                src="https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-2048x998-yjzeuy4v.png"
-                alt=""
-                srcset=""
+                src="https://yoast.com/app/uploads/2015/08/404_error_checking_FI.png"
+                alt="Erreur 404"
             />
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, vero.
+            </p>
         </div>
     </div>
 </template>
