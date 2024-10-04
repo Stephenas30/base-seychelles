@@ -90,7 +90,7 @@
     width: 100%;
     /* background: red; */
 }
-.div-car-d{
+.div-car-d {
     margin-top: 80px;
 }
 .row {
@@ -103,7 +103,7 @@ h1 {
     min-height: 80px;
     /* background-color: red; */
 }
-h2{
+h2 {
     /* background-color: red; */
     padding: 15px 0;
 }

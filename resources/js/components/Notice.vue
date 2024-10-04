@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Header/>
         <div class="container">
             <div v-for="(item, index) in items" :key="index" class="row mt-5">
                 <div class="col-lg-6 card div-col">
@@ -20,6 +21,7 @@
     </div>
 </template>
 <script setup>
+import Header from './Notice/headerNotice.vue'
 const items = [
     {
         title: "2022 lexus LC500 sports",
@@ -45,17 +47,17 @@ const items = [
 ];
 </script>
 <style scoped>
-h1 {
-    margin: 0px;
-    font-size: 30px;
-    color: #222222;
-}
 a {
     padding: 12px 20px;
     background-color: #2263c31a;
     color: #222222;
     font-size: 14px;
     text-decoration: none;
+}
+h1 {
+    margin: 0px;
+    font-size: 30px;
+    color: #222222;
 }
 .span-a {
     margin: 35px 0;
@@ -78,7 +80,6 @@ button {
     border: none;
     max-width: 220px;
 }
-
 image {
     width: 100%;
 }

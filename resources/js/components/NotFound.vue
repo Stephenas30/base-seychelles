@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container">
+        <div class="container card">
             <h1 class="pt-5 pb-2">Page Not Found</h1>
             <img
                 src="https://yoast.com/app/uploads/2015/08/404_error_checking_FI.png"

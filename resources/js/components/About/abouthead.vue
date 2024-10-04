@@ -22,6 +22,5 @@
     font-size: 50px;
     color: #fff;
     text-align: center;
-    /* opacity: 0.5; */
 }
 </style>

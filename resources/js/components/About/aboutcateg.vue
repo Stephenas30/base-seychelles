@@ -37,7 +37,7 @@
                 <div class="col-lg-8 card">
                     <div class="row">
                         <div
-                            class="col-lg-6 card div-hover"
+                            class="col-lg-6 card div-hover mt-5"
                             v-for="(item, index) in filteredData"
                             :key="index"
                         >
@@ -57,6 +57,9 @@
                                             {{ item.price }}
                                         </span>
                                     </p>
+                                    <button class="btn-reserve"><router-link class="nav-link" to="/reserve"
+                                >Réserver !</router-link
+                            ></button>
                                 </div>
                             </div>
                         </div>
@@ -182,5 +185,13 @@ img {
     display: block;
     background-color: #c9c9c9;
     margin: 10px 0;
+}
+.btn-reserve{
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: #081c3b;
+    color: #fff;
+    font-weight: 700;
 }
 </style>

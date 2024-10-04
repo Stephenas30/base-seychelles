@@ -2,7 +2,7 @@
     <div class="divi">
         <div class="head">
             <div class="container">
-                <h1 class="h1-about">Contact Us</h1>
+                <h1 class="h1-about">Terms And Legal Notice</h1>
             </div>
         </div>
     </div>

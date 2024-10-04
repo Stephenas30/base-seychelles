@@ -6,7 +6,7 @@ import notfound from '../components/NotFound.vue';
 import contact from '../components/Contact.vue';
 import faq from '../components/Faq.vue';
 import notice from '../components/Notice.vue'
-
+import reserve from '../components/reserve.vue'
 const routes = [
     {
         path: '/',
@@ -27,6 +27,10 @@ const routes = [
     {
         path: '/notice',
         component: notice
+    },
+    {
+        path: '/reserve',
+        component: reserve
     },
     {
         path: '/:pathMatch(.*)*',

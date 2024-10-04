@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mar-tp-loc">
+                <div class="col-lg-6 mar-tp-loc maclass">
                     <div class="division-loc-img">
                         <img
                             src="../../../../public/image/photos.png"
@@ -69,7 +69,9 @@ const text = ref("Latest Inventory");
 const param = ref(`Incididunt labore dolore magna aliqua enim veniam quis
                         nostrud tempor tempor adispecing miny exercitation
                         ullamco laboris nisiut.`);
-const head = ref(`450+ Dealer Locations Across Seychelles. Locate Your Nearest Dealer.`);
+const head = ref(
+    `450+ Dealer Locations Across Seychelles. Locate Your Nearest Dealer.`
+);
 </script>
 <style scoped>
 .div-col {
@@ -102,12 +104,18 @@ const head = ref(`450+ Dealer Locations Across Seychelles. Locate Your Nearest D
 }
 .head2 {
     font-size: 26px;
+    padding: 20px 0;
 }
 .divis-h {
     margin-top: 20px;
 }
 .mar-tp-loc {
     margin-top: 80px;
+}
+.maclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .div-sp {
     display: flex;

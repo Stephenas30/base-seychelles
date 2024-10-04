@@ -24,11 +24,7 @@
                         :key="index"
                     >
                         <div class="div-im-sh">
-                            <img
-                            class="img"
-                                :src="item.picture"
-                                alt="images"
-                            />
+                            <img class="img" :src="item.picture" alt="images" />
                         </div>
                         <div class="div-item">
                             <h1 class="title-item">{{ item.title }}</h1>
@@ -38,7 +34,9 @@
                                 <p>
                                     Price :
                                     <span class="prom-price">$58,200.00</span>
-                                    <span class="span-price"> {{ item.price }} </span>
+                                    <span class="span-price">
+                                        {{ item.price }}
+                                    </span>
                                 </p>
                             </div>
                         </div>
@@ -143,7 +141,7 @@ const filteredData = ref(data.value);
 .div-hover:hover {
     transform: translateY(-10px);
 }
-.prom-price{
+.prom-price {
     text-decoration: line-through;
     color: #6c757d;
     padding: 0 8px;

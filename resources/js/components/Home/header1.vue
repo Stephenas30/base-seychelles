@@ -11,7 +11,11 @@
                                     Buy Your Dream Car Today Starting From
                                     $2,000
                                 </p>
-                                <button>SEARCH CARS</button>
+                                <button>
+                                    <router-link class="nav-link" to="/about"
+                                        >SEARCH CARS</router-link
+                                    >
+                                </button>
                             </div>
                         </div>
                         <div class="col-lg-6"></div>
@@ -34,9 +38,9 @@
 .title-head {
     background-color: rgba(11, 11, 11, 0.529);
     min-height: 320px;
-    padding: 20px 30px;
+    padding: 10px 30px;
     display: flex;
-    margin: 30px 0;
+    margin: 25px 0;
     justify-content: flex-start;
     flex-wrap: wrap;
     color: #fff;
@@ -59,7 +63,7 @@ button {
 }
 @media (max-width: 765px) {
     .title-head h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     .title-head p {
         font-size: 27px;

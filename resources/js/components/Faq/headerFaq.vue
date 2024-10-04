@@ -2,7 +2,7 @@
     <div class="divi">
         <div class="head">
             <div class="container">
-                <h1 class="h1-about">Contact Us</h1>
+                <h1 class="h1-about">FAQ</h1>
             </div>
         </div>
     </div>
@@ -22,5 +22,6 @@
     font-size: 50px;
     color: #fff;
     text-align: center;
+    /* opacity: 0.5; */
 }
 </style>

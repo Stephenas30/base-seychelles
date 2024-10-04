@@ -94,4 +94,9 @@ button {
     background-color: #bd162d;
     color: #fff;
 }
+@media (max-width: 991px) {
+    .cont-form-head {
+    margin-top: -120px;
+}
+}
 </style>

@@ -96,10 +96,7 @@
                                     <div>
                                         <label>Your Message</label>
                                     </div>
-                                    <textarea
-                                        name=""
-                                        id=""
-                                    ></textarea>
+                                    <textarea name="" id=""></textarea>
                                 </div>
                                 <div class="col-lg-12 mt-5">
                                     <button>SEND MESSAGE</button>
@@ -162,24 +159,24 @@ input {
     border: 1px solid #00000056;
     outline: none;
 }
-textarea{
+textarea {
     padding-top: 20px;
     height: 180px;
 }
-label{
+label {
     padding: 10px 0;
 }
-button{
+button {
     background-color: #bd162d;
     color: #fff;
     border: none;
 }
-.div-form{
+.div-form {
     padding-left: 80px;
 }
 @media (max-width: 992px) {
-    .div-form{
-    padding-left: 12px;
-}
+    .div-form {
+        padding-left: 12px;
+    }
 }
 </style>
