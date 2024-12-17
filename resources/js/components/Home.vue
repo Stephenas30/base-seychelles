@@ -4,9 +4,10 @@
         <Homeform />
         <HomeAv />
         <Homecar />
-        <HomeMarque />
-        <Homeproduct />
         <Home />
+        <HomeMarque />
+        <HomeMail/>
+        <Homeproduct />
         <Homelocat />
     </div>
 </template>
@@ -19,4 +20,5 @@ import Homeproduct from "./Home/produit5.vue";
 import Home from "./Home/Home6.vue";
 import Homelocat from "./Home/location.vue";
 import Homecar from "./Home/HomeCar7.vue";
+import HomeMail from "./Home/mail.vue";
 </script>

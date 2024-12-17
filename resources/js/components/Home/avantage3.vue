@@ -1,78 +1,64 @@
 <template>
-    <div class="div-mt">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="div-av">
-                        <div class="div-icone">
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
-                        <img
-                            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
-                            alt=""
-                            srcset=""
-                        />
-                        <h3>GPS gratuit</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Minima, tempora.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="div-av">
-                        <div class="div-icone">
-                            <i class="bi bi-speedometer"></i>
-                        </div>
-                        <img
-                            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
-                            alt=""
-                            srcset=""
-                        />
-                        <h3>Kilométrage illimité</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Minima, tempora.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="div-av">
-                        <div class="div-icone">
-                            <i class="bi bi-shield-check"></i>
-                        </div>
-                        <img
-                            src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
-                            alt=""
-                        />
-                        <h3>Assurance tous risques</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Minima, tempora.
-                        </p>
+    <div>
+        <div class="container divcont">
+            <div class="division-grid">
+                <div
+                    class="card"
+                    v-for="(item, index) in features"
+                    :key="index"
+                >
+                    <div class="stepBox text-center">
+                        <h1><i :class="item.icon"></i></h1>
+                        <p>{{ item.text }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<script setup>
+const features = [
+    { icon: "bi bi-shield-check", text: "Assurance tous risques" },
+    { icon: "bi bi-truck", text: "Livraison" },
+    { icon: "bi bi-geo-alt", text: "GPS gratuit" },
+    { icon: "bi bi-speedometer", text: "Kilométrage illimité" },
+    { icon: "bi bi-person-plus-fill", text: "Conducteur additionnel" },
+    { icon: "bi bi-clock", text: "Annulation" },
+];
+</script>
+
 <style scoped>
-.div-mt {
-    margin-top: 60px;
-    padding-bottom: 20px;
+.divcont {
+    padding-top: 80px;
 }
-.div-av {
-    text-align: center;
+.row {
+    align-items: stretch;
 }
-.div-icone {
-    font-size: 6rem;
-    color: #2364c4;
+.stepBox {
+    /* background: #2b2a2a; */
+    padding: 18px 12px;
+    border-radius: 12px;
+    height: 100%;
+    border: 1px solid #e3e3e3;
 }
-.div-av img {
-    width: 20%;
+p {
+    color: #716d6e;
+    font-weight: 500;
+    font-size: 14px;
 }
-h3 {
-    font-weight: bold;
-    padding: 20px 0;
+h1 i {
+    font-size: 4rem;
+    /* color: #fff; */
+    color: #ffbf00;
+}
+.division-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-flow: row;
+    gap: 20px;
+}
+.card {
+    border: none;
 }
 </style>

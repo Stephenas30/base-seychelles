@@ -6,7 +6,7 @@
         <div class="container-fluid cont-padd">
             <a class="navbar-brand" href="#"
                 ><router-link class="nav-link" to="/"
-                    >EVA CAR RENTAL</router-link
+                    ><img src="../../../../public/image/logo.png" alt="logo"></router-link
                 ></a
             >
             <button
@@ -97,11 +97,14 @@ function toggleButtonText() {
     font-weight: 400;
 }
 .nav-item a:hover {
-    color: #bd162d;
+    color: #ffbf00;
     font-weight: 500;
 }
 .navbar-toggler i {
     font-size: 35px;
+}
+img{
+  width: 100%;
 }
 @media (max-width: 1063px) {
     .navbar-nav {
@@ -112,12 +115,12 @@ function toggleButtonText() {
         width: auto !important;
     }
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
     .cont-padd {
         padding: 15px;
     }
     .nav-item {
-        background-color: #bd162d;
+        background-color: #ffbf00;
         padding-left: 8px;
         margin: 5px 0;
     }
@@ -129,6 +132,9 @@ function toggleButtonText() {
     }
     .navbar-nav {
         margin-top: 10px;
+    }
+    img{
+      width: 165px;
     }
 }
 </style>

@@ -1,129 +1,126 @@
 <template>
-    <div class="div-car-d">
-        <div class="container">
-            <h2>Based On 4,500+ Reviews</h2>
+    <div class="div-mar-tp">
+        <div class="text-center">
+            <h1 class="head-car">Lorem, ipsum.</h1>
+            <p class="param">Lorem ipsum dolor sit amet.</p>
+            <span class="span-hr"></span>
         </div>
-        <div class="divcar">
+        <!--  -->
+        <div class="container">
             <div class="row">
-                <div class="col-lg-4 p-0">
-                    <div class="bg-im-car">
-                        <div class="div-car">
-                            <div class="div-cont-car">
-                                <h1>Request A 24 Hour Test Drive</h1>
-                                <p>Pick Your Car And Get Instant Drive</p>
-                                <span
-                                    ><a href="#">
-                                        <router-link
-                                            class="nav-link"
-                                            to="/about"
-                                            >Start Driving</router-link
-                                        >
-                                    </a>
-                                </span>
-                            </div>
+                <div
+                    class="col-lg-6"
+                    v-for="(item, index) in features"
+                    :key="index"
+                >
+                    <div class="card-icn">
+                        <div class="div-flex">
+                            <span class="span-icn"
+                                ><i :class="item.icon"></i
+                            ></span>
+                            <h2 class="head-h2">{{ item.title }}</h2>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-0">
-                    <div class="bg-im-car2">
-                        <div class="div-car">
-                            <div class="div-cont-car">
-                                <h1>Car Workshop Services</h1>
-                                <p>All Garage Services Under One Roof</p>
-                                <span
-                                    ><a href="#">
-                                        <router-link
-                                            class="nav-link"
-                                            to="/about"
-                                            >Start Driving</router-link
-                                        >
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 p-0">
-                    <div class="bg-im-car3">
-                        <div class="div-car">
-                            <div class="div-cont-car">
-                                <h1>Get Instant Cash For Trade-Ins</h1>
-                                <p>Fair & Instant Cash Offer In Minutes</p>
-                                <span
-                                    ><a href="#">
-                                        <router-link
-                                            class="nav-link"
-                                            to="/about"
-                                            >Start Driving</router-link
-                                        >
-                                    </a>
-                                </span>
-                            </div>
+                        <div>
+                            <p class="param-icn">{{ item.description }}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!--  -->
     </div>
 </template>
-<script setup></script>
+<script setup>
+const features = [
+    {
+        icon: "bi bi-wrench-adjustable",
+        title: "Lorem ipsum.",
+        description:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
+    },
+    {
+        icon: "bi bi-gift",
+        title: "Lorem ipsum.",
+        description:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
+    },
+    {
+        icon: "bi bi-send-fill",
+        title: "Lorem ipsum.",
+        description:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
+    },
+    {
+        icon: "bi bi-bus-front",
+        title: "Lorem ipsum.",
+        description:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, minus cum, sapiente dolorum adipisci qui beatae praesentium velit sit nostrum provident aspernatur dicta cumque molestias veniam assumenda a. Nam, culpa.",
+    },
+];
+</script>
 <style scoped>
-.bg-im-car {
-    background-image: url(https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/car-test-drive-banner.jpg);
-}
-.bg-im-car2 {
-    background-image: url(https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/car-service-banner.jpg);
-}
-.bg-im-car3 {
-    background-image: url(https://avada.website/car-dealership/wp-content/uploads/sites/165/2022/02/trade-in-banner.jpg);
-}
-.div-car {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.393);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-}
-.divcar {
-    width: 100%;
-    /* background: red; */
-}
-.div-car-d {
+.div-mar-tp {
     margin-top: 80px;
 }
-.row {
-    padding: 0;
-    margin: 0;
+.head-car {
+    color: #716d6e;
+    margin: 0px 0px 15px 0px;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.1em;
 }
-h1 {
-    /* font-size: 2rem; */
-    text-transform: uppercase;
-    min-height: 80px;
-    /* background-color: red; */
+.param {
+    color: #716d6e;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0px 0px 15px 0px;
 }
-h2 {
-    /* background-color: red; */
-    padding: 15px 0;
-}
-p {
-    margin-top: 15px;
-}
-.div-cont-car {
-    color: #fff;
-    max-width: 80%;
-    min-height: 50px;
-}
-span {
-    padding: 11px 27px;
-    margin-top: 25px;
+.span-hr {
+    width: 200px;
+    height: 5px;
+    background-color: #ffbf00;
     display: inline-block;
-    color: #fff;
-    border: 1px solid #fff;
 }
-a {
-    text-decoration: none;
+.span-icn {
+    background: #ffbf00;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
     color: #fff;
+    font-size: 1.2rem;
+}
+.head-h2 {
+    margin: 5px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #716d6e;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1em;
+}
+.param-icn {
+    color: #716d6e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    text-align: justify;
+}
+.card-icn {
+    background-color: #ededed;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgba(2, 1, 1, 0);
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 30px;
+}
+.div-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 </style>

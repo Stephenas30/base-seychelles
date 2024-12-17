@@ -518,7 +518,7 @@
             <h2 class="Votres">Votre réservation</h2>
             <div class="clearfixe text-center">
               <img
-                src="../../../assets/image/HomeImg/photos4.png"
+                src="../../../../public/image/car.jpg"
               />
               <h5 class="h5name">name</h5>
               <small>AUTOMATIQUE</small>
@@ -779,7 +779,7 @@ watch(siegeBebe, (newValue) => {
 
 .icnX {
   font-size: 1.5rem;
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   margin-top: -15px;
   margin-left: 10px;
   padding: 5px;
@@ -812,7 +812,7 @@ watch(siegeBebe, (newValue) => {
 .spcal {
   /* background-color: crimson; */
   padding: 10px;
-  color: #bd162d;
+  color: #ffbf00;
   font-size: 1rem;
 }
 
@@ -851,7 +851,7 @@ watch(siegeBebe, (newValue) => {
 }
 
 .spantotal {
-  color: #bd162d;
+  color: #ffbf00;
 }
 
 .grandDivforminp,
@@ -871,7 +871,7 @@ watch(siegeBebe, (newValue) => {
 }
 
 .paraTel {
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   font-size: 1.5rem;
   color: #6dace6;
 }
@@ -880,7 +880,7 @@ watch(siegeBebe, (newValue) => {
   /* background-color: #6dace6; */
   padding: 10px;
   font-size: 20px;
-  color: #bd162d;
+  color: #ffbf00;
 }
 
 /* cdw */
@@ -944,15 +944,15 @@ watch(siegeBebe, (newValue) => {
 }
 
 .cdwcol {
-  background-color: #bd162d;
+  background-color: #ffbf00;
 }
 
 .scdwcol {
-  background-color: #bd162d;
+  background-color: #ffbf00;
 }
 
 .scdwplus {
-  background-color: #bd162d;
+  background-color: #ffbf00;
 }
 
 .divspan {
@@ -962,11 +962,11 @@ watch(siegeBebe, (newValue) => {
 }
 
 .bi-check-circle-fill {
-  color: #bd162d;
+  color: #ffbf00;
 }
 
 .bi-exclamation-triangle-fill {
-  color: #bd162d;
+  color: #ffbf00;
 }
 
 .hoveredTab1 {
@@ -994,18 +994,18 @@ ul li{
   list-style: none;
 }
 .icspgp {
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   margin-left: 5px;
-  color: #bd162d;
+  color: #ffbf00;
 }
 .h2coO {
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   font-size: 25px;
   padding-top: 20px;
 }
 
 .pfacult {
-  /* background: #bd162d; */
+  /* background: #ffbf00; */
   padding-top: 20px;
   font-size: 16px;
 }
@@ -1023,7 +1023,7 @@ ul li{
 }
 
 .ulclassname span {
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   padding-top: 5px;
 }
 
@@ -1078,7 +1078,7 @@ label {
 }
 
 .paramMer {
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   margin-top: 10px;
   font-size: 14px;
   padding: 0px;
@@ -1113,7 +1113,7 @@ label {
   left: 85%;
   width: 15%;
   height: 100%;
-  background-color: #bd162d;
+  background-color: #ffbf00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1132,7 +1132,7 @@ label {
 .img-container {
   position: relative;
   display: inline-block;
-  /* background-color: #bd162d; */
+  /* background-color: #ffbf00; */
   cursor: pointer;
 }
 
