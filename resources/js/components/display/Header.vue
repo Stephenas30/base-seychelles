@@ -1,12 +1,12 @@
 <template>
     <nav
         class="navbar navbar-expand-lg navbar-light"
-        style="background-color: #fff"
+        style="background-color: #fff;padding: 0;"
     >
         <div class="container-fluid cont-padd">
             <a class="navbar-brand" href="#"
                 ><router-link class="nav-link" to="/"
-                    ><img src="../../../../public/image/logo.png" alt="logo"></router-link
+                    ><img src="../../../../public/image/logo-black.png" alt="logo"></router-link
                 ></a
             >
             <button
@@ -104,7 +104,7 @@ function toggleButtonText() {
     font-size: 35px;
 }
 img{
-  width: 100%;
+  width: 80%;
 }
 @media (max-width: 1063px) {
     .navbar-nav {

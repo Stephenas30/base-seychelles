@@ -10,7 +10,7 @@
                             aria-label="Bootstrap"
                         >
                             <img
-                                src="../../../../public/image/logo.png"
+                                src="../../../../public/image/logo-white.png"
                                 alt="logo"
                             />
                         </a>
@@ -127,7 +127,7 @@
 <script setup></script>
 <style scoped>
 img {
-    width: 160px;
+    width: 90px;
 }
 li,
 a {

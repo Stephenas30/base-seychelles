@@ -2,7 +2,7 @@
     <div>
         <div class="container cont-form-head">
             <div class="div-form">
-              <p class="tit-form">Fill out this form to find out about our car rental offers</p>
+              <!-- <p class="tit-form">Fill out this form to find out about our car rental offers</p> -->
                 <form action="" class="form-head-search">
                     <div class="row">
                         <div class="col-lg-2 mt-2">

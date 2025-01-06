@@ -1,9 +1,19 @@
 <template>
     <div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.5863858985344!2d55.508906274512206!3d-4.670940448692087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x231fd5c71a3dddb1%3A0x798c3d195580eb02!2sA%C3%A9roport%20de%20Victoria-Seychelles!5e1!3m2!1sfr!2smg!4v1735622405542!5m2!1sfr!2smg"
+                height="300"
+                style="border: 0; width: 100%"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
         <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-4">
-                    <h2>Dealership Info</h2>
+                    <h2>Informations</h2>
                     <img
                         src="https://avada.website/car-dealership/wp-content/uploads/sites/165/2021/12/heading-separator.png"
                         alt=""
@@ -16,9 +26,9 @@
                             ></span>
                         </span>
                         <div class="div-nm-cnt">
-                            <h4>(202) 1155-909</h4>
+                            <h4>+49-931-663984-98</h4>
                             <span class="col-name"
-                                >Call our dealer assistants, anytime!</span
+                                >Lorem ipsum dolor sit amet.</span
                             >
                         </div>
                     </div>
@@ -32,7 +42,7 @@
                         <div class="div-nm-cnt">
                             <h4>cars@eva-rental.com</h4>
                             <span class="col-name"
-                                >Have any queries? Send us an email</span
+                                >Lorem ipsum dolor sit amet.</span
                             >
                         </div>
                     </div>
@@ -44,9 +54,9 @@
                             ></span>
                         </span>
                         <div class="div-nm-cnt">
-                            <h4>32 Stimple Road</h4>
+                            <h4>Seychelles</h4>
                             <span class="col-name"
-                                >Grand Pierce, Florida – 34567, USA</span
+                                >Aéroport de Victoria-Seychelles</span
                             >
                         </div>
                     </div>
@@ -58,14 +68,12 @@
                             ></span>
                         </span>
                         <div class="div-nm-cnt">
-                            <h4>Showroom Hours</h4>
+                            <h4>Nos horaires</h4>
                             <span class="col-name"
-                                >Monday – Friday : 8 am to 9 pm</span
+                                >lundi à vendredi de 8 h à 18 h</span
                             >
-                            <span class="col-name"
-                                >Saturday : 9 am to 8 pm</span
-                            >
-                            <span class="col-name">Sunday : 10 am to 6 pm</span>
+                            <span class="col-name">Samedi de 10 h à 15 h</span>
+                            <!-- <span class="col-name">Sunday : 10 am to 6 pm</span> -->
                         </div>
                     </div>
                     <span class="sp-hr"></span>
@@ -130,7 +138,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 13px;
-    color: #2364c4;
+    color: #ffbf00;
 }
 .sp-hr {
     width: 90%;

@@ -57,4 +57,9 @@
         font-size: 27px;
     }
 }
+@media (max-width: 375px) {
+  .title-head {
+  margin: 10px 0;
+}
+}
 </style>

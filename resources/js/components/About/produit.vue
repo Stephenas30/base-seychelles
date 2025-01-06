@@ -7,6 +7,30 @@
                 </div>
 
                 <div class="col-lg-8 card">
+                    <div class="container containToas">
+                        <div
+                            role="alert"
+                            aria-live="assertive"
+                            aria-atomic="true"
+                            v-show="isVisible"
+                        >
+                            <div class="toast-body d-flex">
+                                <span class="spanToasts"
+                                    ><i class="bi bi-exclamation-circle"></i
+                                ></span>
+                                <p class="paraToas">
+                                    L'offre qui s'affiche est un exemple de
+                                    réservation sur les prochains 5 jours. Pour
+                                    avoir une offre adaptée, veuillez remplir le
+                                    formulaire adjacent, et cliquez sur le
+                                    bouton 'Afficher les offres'
+                                </p>
+                                <span class="icnX"
+                                    ><i class="bi bi-x" @click="handleClick"></i
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div
                             class="col-lg-6 card div-hover mt-5"
@@ -90,6 +114,12 @@ const data = ref([
 ]);
 
 const filteredData = ref(data.value);
+
+const isVisible = ref(true);
+
+const handleClick = () => {
+  isVisible.value = false;
+};
 </script>
 <style scoped>
 .div-cat {
@@ -140,5 +170,32 @@ const filteredData = ref(data.value);
     padding: 25px;
     border: 1px solid #d5d5d5;
     text-align: center;
+}
+.containToas {
+  background-color: #6dace6;
+  margin-bottom: 20px;
+  padding: 10px
+}
+.spanToasts {
+  /* background-color: chartreuse; */
+  font-size: 2em;
+  padding-right: 10px;
+  color: #fff;
+  margin: 0px;
+}
+.paraToas {
+  /* background-color: aqua; */
+  font-size: 16px;
+  color: #fff;
+  text-align: justify;
+  margin-top: 10px;
+}
+.icnX {
+  font-size: 1.5rem;
+  /* background-color: #899e27; */
+  margin-top: -15px;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
 }
 </style>
