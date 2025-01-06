@@ -1,14 +1,15 @@
 <template>
     <nav
         class="navbar navbar-expand-lg navbar-light"
-        style="background-color: #fff;padding: 0;"
+        style="background-color: #fff; padding: 0"
     >
         <div class="container-fluid cont-padd">
             <a class="navbar-brand" href="#"
                 ><router-link class="nav-link" to="/"
-                    ><img src="../../../../public/image/logo-black.png" alt="logo"></router-link
-                ></a
-            >
+                    ><img
+                        src="../../../../public/image/logo-black.png"
+                        alt="logo" /></router-link
+            ></a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -58,6 +59,19 @@
                             ></a
                         >
                     </li>
+                    <li class="nav-item div-langage">
+                        <a class="nav-link div-langage" href="#">
+                            <select v-model="$i18n.locale">
+                                <option
+                                    v-for="locale in $i18n.availableLocales"
+                                    :key="`locale-${locale}`"
+                                    :value="locale"
+                                >
+                                    {{ locale }}
+                                </option>
+                            </select>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -103,8 +117,13 @@ function toggleButtonText() {
 .navbar-toggler i {
     font-size: 35px;
 }
-img{
-  width: 80%;
+img {
+    width: 80%;
+}
+.div-langage {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 @media (max-width: 1063px) {
     .navbar-nav {
@@ -133,8 +152,8 @@ img{
     .navbar-nav {
         margin-top: 10px;
     }
-    img{
-      width: 165px;
+    img {
+        width: 165px;
     }
 }
 </style>
